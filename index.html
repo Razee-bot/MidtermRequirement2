@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyscript Reflection Template</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <style>
+        body {
+            font-family: Times New Roman, sans-serif;
+            background-color: #5a5a5a;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 30%;
+            margin: auto;
+            padding: 50px;
+            background-color: #cd0101;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-style: solid;
+            border-width: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .outer-container {
+            background-color: #eab64d;
+            padding: 20px;
+            border: solid;
+            border-color: #af883b;
+            border-width: 10px;
+        }
+        .inner-container {
+            background-color: #ffffff;
+            padding: 50px;
+            border: solid;
+            border-color: #67c7eb;
+            border-width: 10px;
+        }
+        p {
+            font-weight: bold;
+            font: Arial;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Reflection</h1>
+        <div class="outer-container">
+            <p>Name: Rexel Owen N. Paler</p>
+            <p>Grade/Section: BSIT 1st YEAR</p>
+            <div class="inner-container">
+                <py-script>
+                    from pyscript import Element
+
+                    reflection_content = [
+                    "In today’s society, technology is everywhere almost everyone has a social media account for example Facebook, Instagram, etc. ranging from young people to old people to connect with their family, friends, and relatives or share photos online and talk to them in a private conservation like in messenger where all of their conversations can be viewed by everyone who have access to their accounts, and with technology being everywhere and easily accessible to an experienced person like hackers. They can easily get private personal information in those messages. That’s why the importance of data privacy and cyber awareness is needed more than ever with technology everywhere.", 
+
+                    "That’s where the recent Data Privacy and Cyber Awareness Campaign comes in to further educate the students about the threats they can encounter online like their personal information being stolen from them without the individual’s consent, or their information getting posted to various websites or posted online for random to see and possibly use it for their own liking. We know that once something is posted on the internet it is there forever. That’s why we have the campaign to educate individuals on how to prevent their personal information from being posted online or stolen from them.",
+                    
+                    "The campaign helped the individuals gain deeper knowledge on how to properly handle the security of their accounts like having different passwords for different accounts to avoid the others being compromised when one gets accessed by other people, also having different emails can help with creating a more secure protection to their accounts. Individuals who are unaware of how vulnerable their information can be on the internet are given an idea in the seminar how having the same password in all of their accounts can be dangerous so it is recommended that they use different passwords.",
+                    
+                    "The cybersecurity segment also helped individuals be more aware of the risks in the digital world like phishing scams, credit card scams, malware, identity theft, etc., and how one’s personal information is as valuable as other valuable, also, the seminar taught individuals how to recognize phishing scams and report suspicious activity online, another valuable piece of information is to always stay vigilant in the digital world, and be taught to review privacy settings, create a strong and unique password, and distinguish legitimate websites and secure websites apart from illegitimate and unsecured websites as they are a threat in the digital world.",
+                    
+                    "Overall, this seminar taught us about how to be safe in the digital world by having a unique and strong password, staying vigilant, and learning to distinguish secure and legitimate websites apart from the unsecured and illegitimate,  also to avoid scams online, not only that but the seminar has helped individuals to always protect their personal information as the digital world is as dangerous as the real world with many threats waiting to attack a user digitally like their personal information or data being posted online for everyone to see, that’s why we had this seminar to hopefully mitigate those who are unaware how vulnerable they are online."
+                    
+                    ]
+
+                    # Insert the reflection content into the HTML
+                    reflection_html = "<p>" + "</p><p>".join(reflection_content) + "</p>"
+                    Element('reflection').element.innerHTML = reflection_html
+                </py-script>
+
+                <div id="reflection"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
